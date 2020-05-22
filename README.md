@@ -1,8 +1,8 @@
 # Stacked-Card-Carousal 
 
-![Image description](http://surabhigeorge.com/git_images/stack-card-carousal.png)
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+
+![Image description](http://surabhigeorge.com/git_images/stack-card-carousal.png)
 
 ## Development server
 
