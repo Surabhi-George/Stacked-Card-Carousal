@@ -1,0 +1,110 @@
+.cp-st-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f7f7;
+    min-height: 100vh;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.cp-st-slider-warp .carousal-inner{
+    max-width: 630px;
+}
+.cp-slider{
+    margin: 0 auto;
+    position: relative;
+    min-height: 490px;    
+    display: flex;
+    justify-content: center;
+}
+.cp-slider-dot-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+}
+.cp-slider-dot-wrap li{
+    padding: 0 5px;
+    cursor: pointer;
+}
+.cp-slider-dot{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #b1b1b1;
+    transition: all .5s ease-in;
+    margin-top: 20px;
+}
+.cp-slider-dot.active{
+    width: 22px;
+    height: 22px;
+    background-color: #FB9801;
+}
+.cp-slider li{
+    position: absolute;
+    opacity: 1;
+    transition: opacity .5s;
+    border-radius: 10px;
+}
+.cp-slider li.active{
+    opacity: 1;
+}
+.cp-slider li:first-child{
+    z-index: 3;
+}
+.cp-slider li:nth-child(2){
+    margin-left: -40px;
+    margin-top: 40px;
+    z-index: 2;
+}
+.cp-slider li:nth-child(3){
+    margin-left: -80px;
+    margin-top: 80px;
+    z-index: 1;
+}
+.cp-slider li div{
+    background-size: cover;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.24);
+    background: #fff;
+    width: 335px;
+    height: 490px;
+}
+.cp-slider li:nth-child(2) div{
+    height: 410px;
+    background-size: contain;
+}
+.cp-slider li:nth-child(3) div{
+    height: 330px;
+    background-size: contain;
+}
+
+@media(max-width: 767px){
+    .cp-slider li div{
+        width: 200px;
+        height: 308px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .cp-slider li:nth-child(2) div {
+        height: 246px;
+    }
+    .cp-slider li:nth-child(3) div {
+        height: 178px;
+    }
+    .cp-slider li:nth-child(3) {
+        margin-left: -36px;
+        margin-top: 70px;
+    }
+    .cp-slider li:nth-child(2) {
+        margin-left: -20px;
+        margin-top: 30px;
+    }
+    .cp-slider {
+        min-height: 300px;
+    }
+}
