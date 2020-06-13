@@ -3,7 +3,7 @@
       <div>
           <ul class="cp-slider" id="slide_Warp">
               <li class="text-center" id="item{{i}}" [ngClass]="{'active': show === i}" *ngFor="let data of slider_screens;let i = index">
-                  <div [style.backgroundImage]="'url('+ data.photo +')'"></div>
+                  <div [style.backgroundImage]="'url(assets/'+ data.photo +')'"></div>
               </li>
           </ul>
           <ul class="cp-slider-dot-wrap cp-pad50">

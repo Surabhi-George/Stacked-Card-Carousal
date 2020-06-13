@@ -73,6 +73,7 @@ ul{
     background: #fff;
     width: 335px;
     height: 490px;
+    background-position: top;
 }
 .cp-slider li:nth-child(2) div{
     height: 410px;
